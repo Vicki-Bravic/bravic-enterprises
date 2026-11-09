@@ -29,13 +29,12 @@ Confirmed business details: **info@bravic.com.au** · **ABN 73 650 113 303**.
 
 Before launch, obtain:
 
-1. Approved demo store URL. Replace the disabled “View Demo Store” button with an anchor using that URL and the same `button` class; remove its `disabled` attribute and update the “link coming soon” note. Keep password-required wording. Never commit the demo password; share it separately with prospective clients.
-2. Approval of service descriptions, public portfolio wording, privacy wording and branding.
-3. Final domain when domain connection is separately authorised. Add an absolute `og:url` and canonical URL then; neither is invented now. Optional approved social image can be added with an absolute `og:image` URL.
+1. Approval of service descriptions, public portfolio wording, privacy wording and branding.
+2. Final domain when domain connection is separately authorised. Add an absolute `og:url` and canonical URL then; neither is invented now. Optional approved social image can be added with an absolute `og:image` URL.
 
 Branding is plain text, not an invented logo. To rename the business, search the repository for `Bravic Enterprises` and update the header, introduction, contact, footer, titles, metadata, 404 page and README. Update the footer copyright year when appropriate. The SVG is a generic placeholder and the main illustration is decorative CSS.
 
-The demo URL is deliberately shown as pending until supplied. The public contact email is an active mailto link.
+The demo links to https://bravic-demo.myshopify.com and requires a visitor password. Share access separately; never commit the password. The public contact email is an active mailto link.
 
 ## GitHub repository
 
