@@ -25,17 +25,17 @@ Open http://localhost:8080. Stop with Ctrl+C. Local Python hosting does not appl
 
 Edit semantic sections in `index.html`; colours, type and spacing live in `styles.css`. The only portfolio facts included are the supplied public business description and general supplied examples; no operational systems or confidential data were accessed.
 
+Confirmed business details: **info@bravic.com.au** · **ABN 73 650 113 303**.
+
 Before launch, obtain:
 
-1. Confirmed public business email. Replace the contact placeholder paragraph with `<a href="mailto:CONFIRMED_EMAIL">CONFIRMED_EMAIL</a>` using the approved address.
-2. ABN, replacing `ABN: To be confirmed` in the footer.
-3. Approved demo store URL. Replace the disabled “View Demo Store” button with an anchor using that URL and the same `button` class; remove its `disabled` attribute and update the “link coming soon” note. Keep password-required wording. Never commit the demo password; share it separately with prospective clients.
-4. Approval of service descriptions, public portfolio wording, privacy wording and branding.
-5. Final domain when domain connection is separately authorised. Add an absolute `og:url` and canonical URL then; neither is invented now. Optional approved social image can be added with an absolute `og:image` URL.
+1. Approved demo store URL. Replace the disabled “View Demo Store” button with an anchor using that URL and the same `button` class; remove its `disabled` attribute and update the “link coming soon” note. Keep password-required wording. Never commit the demo password; share it separately with prospective clients.
+2. Approval of service descriptions, public portfolio wording, privacy wording and branding.
+3. Final domain when domain connection is separately authorised. Add an absolute `og:url` and canonical URL then; neither is invented now. Optional approved social image can be added with an absolute `og:image` URL.
 
 Branding is plain text, not an invented logo. To rename the business, search the repository for `Bravic Enterprises` and update the header, introduction, contact, footer, titles, metadata, 404 page and README. Update the footer copyright year when appropriate. The SVG is a generic placeholder and the main illustration is decorative CSS.
 
-Missing contact and demo details are deliberately shown as pending instead of creating broken or misleading links.
+The demo URL is deliberately shown as pending until supplied. The public contact email is an active mailto link.
 
 ## GitHub repository
 

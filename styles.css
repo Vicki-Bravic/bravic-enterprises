@@ -84,7 +84,7 @@ h3{font-size:20px;line-height:1.4;font-weight:500;margin:0 0 22px;letter-spacing
 .contact p:not(.eyebrow){font-size:14px;line-height:1.8;max-width:465px;color:#dae1d5}
 .contact .eyebrow{color:var(--lime)}
 .contact-details{border-top:1px solid #668076;padding-top:28px}
-.contact .email-pending{font-size:20px!important;color:white!important}
+.contact .contact-email{font-size:20px!important;color:white!important}
 .privacy{padding-block:38px;display:grid;grid-template-columns:1fr 4fr;gap:35px;border-bottom:1px solid var(--line)}
 .privacy h2{font-size:18px;letter-spacing:0;margin:0}
 .privacy p{font-size:11px;color:var(--muted);line-height:1.9;margin:0}
@@ -143,7 +143,7 @@ h2{font-size:32px}
 @media print{.hero-art,.skip{display:none}
 .hero,.service-layout,.contact-layout{display:block}
 .contact{color:#203c37;background:white}
-.contact p:not(.eyebrow),.contact .eyebrow,.contact .email-pending{color:#203c37!important}
+.contact p:not(.eyebrow),.contact .eyebrow,.contact .contact-email{color:#203c37!important}
 .wrap{width:100%}
 .header nav{display:none}
 }
