@@ -1,10 +1,11 @@
 # Bravic Enterprises Pty Ltd website
 
-Independent, buildless HTML/CSS website prepared for Cloudflare Pages Free. No JavaScript, package installation, external assets, APIs, analytics, cookies, backend, Workers, Pages Functions, databases, bindings, secrets or paid services are required. No deployment or DNS changes have been performed.
+Independent, buildless HTML/CSS website prepared for Cloudflare Pages Free. Minimal vanilla JavaScript for copying the public demo password; no package installation, external assets, APIs, analytics, cookies, backend, Workers, Pages Functions, databases, bindings, secrets or paid services are required. No deployment or DNS changes have been performed.
 
 ## Files
 
 - `index.html`: single-page website, six navigation sections, privacy section and SEO/Open Graph metadata.
+- `demo-access.js`: clipboard copying with a browser fallback and accessible confirmation.
 - `styles.css`: responsive layouts, keyboard focus styles and original CSS illustration.
 - `assets/favicon.svg`: neutral placeholder favicon, not a company logo.
 - `404.html`: accessible not-found page; also prevents Cloudflare Pages' implicit SPA fallback.
@@ -34,36 +35,25 @@ Before launch, obtain:
 
 Branding is plain text, not an invented logo. To rename the business, search the repository for `Bravic Enterprises` and update the header, introduction, contact, footer, titles, metadata, 404 page and README. Update the footer copyright year when appropriate. The SVG is a generic placeholder and the main illustration is decorative CSS.
 
-The demo links to https://bravic-demo.myshopify.com and requires a visitor password. Share access separately; never commit the password. The public contact email is an active mailto link.
+The demo links to https://bravic-demo.myshopify.com and displays the intentionally public visitor password **demostore**. Visitors can copy it without registering or contacting us. If the store URL changes, update the Visit Demo Store link in `index.html`. Never commit administrator credentials or API tokens. The public contact email is an active mailto link.
 
 ## GitHub repository
 
-The designated repository already exists: `Vicki-Bravic/bravic-enterprises`. Use only this repository. To create a replacement independent repository later, create a new empty GitHub repository under your account, select the desired visibility, and upload these files, or initialise Git locally and add that new repository as `origin`. Never reuse another business project's repository or integrations. Keep secrets out of source control.
+Use the existing repository, `Vicki-Bravic/bravic-enterprises`. Review the visitor-access changes in a pull request before merging into `main`.
 
-## Cloudflare Pages Free — after approval only
+## Existing Cloudflare Pages deployment
 
-1. In Cloudflare, choose **Workers & Pages → Create application → Pages → Import an existing Git repository** (UI labels may vary). Choose Pages, not a Worker application.
-2. Authorise only `Vicki-Bravic/bravic-enterprises` if prompted for repository access. Create a new, separate Pages project, for example `bravic-enterprises`. Do not select an existing project.
-3. Configure:
+Use the existing GitHub-connected Cloudflare Pages project. Do not create another project or repository or change DNS. Merging the reviewed pull request into its configured production branch allows the existing Pages integration to deploy the static files.
 
-| Setting | Value |
-| --- | --- |
-| Production branch | `main` |
-| Framework preset | None |
-| Root directory | Blank (repository root) |
-| Build command | Blank / None; use `exit 0` only if the UI requires a value |
-| Build output directory | `.` (repository root, which contains `index.html`) |
-| Environment variables / secrets | None |
-| Worker bindings | None |
+Keep the existing static settings: no framework, no build command, repository root output (`.`), no environment variables, bindings, Workers, Pages Functions or database. No subscriptions or paid services are needed.
 
-4. Deploy only after owner approval. Preview using the assigned free `https://<project-name>.pages.dev` address.
-5. Check mobile and desktop layouts, keyboard navigation, security headers, contact and demo status, and a missing URL returning HTTP 404. Git-connected Pages will automatically deploy later pushes to the configured production branch.
+Before merging, check the public password, Copy Password confirmation, Visit Demo Store link, keyboard navigation and mobile/tablet/desktop layouts. Where the existing project provides a branch preview, review that preview too. `_headers` permits only same-origin JavaScript so the local clipboard script can run; it adds no external connections.
 
 The repository root is published, so README/source assets may be accessible; keep all tracked content public-safe. `_headers` is a static hosting configuration file, not executable code or a Function. No Wrangler setup is needed.
 
 ## Connect a domain later — separate authorisation required
 
-Do not change anything now. Once explicitly authorised, open this new Pages project's **Custom domains** settings and follow Cloudflare's instructions for the approved domain. Review whether the chosen apex/subdomain requires nameserver or CNAME changes before making them. Coordinate any GoDaddy DNS changes separately, preserve existing mail and other records, and verify HTTPS after setup. Only then add the final canonical and Open Graph URLs. Do not modify any other project, Worker, integration or domain.
+Do not change anything now. Once explicitly authorised, open the existing Pages project's **Custom domains** settings and follow Cloudflare's instructions for the approved domain. Review whether the chosen apex/subdomain requires nameserver or CNAME changes before making them. Coordinate any GoDaddy DNS changes separately, preserve existing mail and other records, and verify HTTPS after setup. Only then add the final canonical and Open Graph URLs. Do not modify any other project, Worker, integration or domain.
 
 ## Scope
 
