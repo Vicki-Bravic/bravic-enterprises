@@ -148,3 +148,16 @@ h2{font-size:32px}
 .header nav{display:none}
 }
 
+
+.about-vicki { display: grid; grid-template-columns: 1fr 1.2fr; gap: 10%; padding-block: 70px 84px; border-top: 1px solid var(--line); }
+.about-heading { align-self: start; }
+.about-hello { font: 24px/1.5 Georgia, serif; max-width: 320px; margin-block: 28px 16px; }
+.about-story { border-left: 2px solid #c5d3b5; padding-left: 30px; }
+.about-story p { font-size: 15px; line-height: 1.95; color: var(--muted); margin: 0 0 22px; }
+.about-story p:last-child { margin-bottom: 0; }
+@media (max-width: 700px) {
+  .about-vicki { grid-template-columns: 1fr; gap: 30px; padding-block: 44px 50px; }
+  .about-hello { font-size: 22px; max-width: none; }
+  .about-story { padding-left: 20px; }
+  .about-story p { font-size: 14px; }
+}
