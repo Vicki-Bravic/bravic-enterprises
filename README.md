@@ -71,4 +71,4 @@ No Camping Mat Warehouse repository, Shopify store, Cloudflare resource, DNS rec
 
 ## Photography
 
-The introduction, Shopify service and Meet Vicki sections use locally hosted, responsive WebP stock photos. See `assets/PHOTO-CREDITS.md` for source URLs, license and guidance for replacing them with Vicki's own photos. There are no third-party image requests. Update image alt text and dimensions when replacing a photo.
+The introduction and Shopify service sections use locally hosted, responsive WebP stock photos. Meet Vicki uses Vicki’s supplied portrait, edited with AI for business clothing and background. See `assets/PHOTO-CREDITS.md` for source URLs, license and guidance for replacing them with Vicki's own photos. There are no third-party image requests. Update image alt text and dimensions when replacing a photo.
