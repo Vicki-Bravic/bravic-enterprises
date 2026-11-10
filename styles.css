@@ -177,3 +177,19 @@ h2{font-size:32px}
   .service-photo { height: 200px; }
   .about-photo img { aspect-ratio: 4 / 5; }
 }
+
+/* Public Shopify demonstration access */
+.demo-password{display:flex;align-items:center;flex-wrap:wrap;gap:8px 16px;background:#e9eddf;border:1px solid #cdd6c7;border-radius:4px;padding:18px;margin-block:22px 18px;font-size:13px;font-weight:700}
+.demo-password code{font:700 24px/1.4 monospace;letter-spacing:1px;color:var(--green);user-select:all}
+.demo-actions{display:flex;flex-wrap:wrap;gap:12px}
+.demo-actions .button{min-height:48px;cursor:pointer}
+.demo-actions [hidden]{display:none}
+.button-secondary{background:transparent;color:var(--green);border:1px solid var(--green)}
+.button-secondary:hover{background:#e9eddf}
+.project-content .demo-invitation{color:var(--green);font-weight:700}
+.project-content .copy-status{min-height:1.85em;margin:8px 0;color:var(--green);font-weight:700}
+.demo-instructions{padding-left:22px;margin-block:12px 22px;font-size:13px;line-height:1.85;color:var(--muted)}
+.demo-instructions li{padding-left:3px;margin-bottom:4px}
+.demo-note{border-top:1px solid var(--line);padding-top:16px;margin-bottom:0}
+.clipboard-fallback{position:fixed;top:0;left:0;width:1px;height:1px;opacity:0;font-size:16px}
+@media(max-width:400px){.demo-actions .button{width:100%}}
