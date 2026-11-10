@@ -68,3 +68,7 @@ Do not change anything now. Once explicitly authorised, open this new Pages proj
 ## Scope
 
 No Camping Mat Warehouse repository, Shopify store, Cloudflare resource, DNS record or integration is needed or accessed. The portfolio's public website URL is an ordinary outbound link, not an integration. This website is ready for review, not deployed.
+
+## Photography
+
+The introduction, Shopify service and Meet Vicki sections use locally hosted, responsive WebP stock photos. See `assets/PHOTO-CREDITS.md` for source URLs, license and guidance for replacing them with Vicki's own photos. There are no third-party image requests. Update image alt text and dimensions when replacing a photo.
